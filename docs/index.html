@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11111b"><meta name="description" content="Export Claude.ai conversations to Markdown with one bookmark click.">
+<title>Claude MD Exporter — Install</title>
+<style>
+:root{color-scheme:dark;--bg:#11111b;--panel:#181825;--text:#cdd6f4;--muted:#a6adc8;--accent:#89b4fa;--green:#a6e3a1;--line:#313244}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -15%,#26314b 0,transparent 52%),var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:var(--accent)}
+.wrap{width:min(900px,calc(100% - 36px));margin:auto;padding:48px 0 40px}header{display:flex;justify-content:space-between;align-items:center;margin-bottom:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:750;letter-spacing:-.03em}.mark{display:grid;place-items:center;width:38px;height:38px;border:1px solid #45475a;border-radius:12px;background:#313244;font-size:20px}
+nav{display:flex;gap:18px;font-size:14px}nav a{color:var(--muted);text-decoration:none}.hero{text-align:center;max-width:720px;margin:0 auto 42px}
+.eyebrow{display:inline-block;padding:5px 12px;border:1px solid #45475a;border-radius:99px;color:var(--green);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+h1{margin:20px 0 12px;font-size:clamp(38px,7vw,64px);line-height:1.05;letter-spacing:-.06em}.lead{max-width:610px;margin:auto;color:var(--muted);font-size:18px}
+.install{max-width:650px;margin:34px auto 0;padding:24px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(160deg,#313244bb,#181825ee);box-shadow:0 24px 80px #0004}
+.bookmarklet{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 24px;border:1px solid #a6e3a1;border-radius:12px;background:var(--green);color:#11111b;font-weight:800;text-decoration:none;cursor:grab;user-select:none}
+.hint{margin:12px 0 0;color:var(--muted);font-size:13px}.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:16px}
+button,.secondary{min-height:40px;padding:0 14px;border:1px solid #45475a;border-radius:10px;background:#313244;color:var(--text);font:inherit;font-size:13px;text-decoration:none;cursor:pointer}
+button:disabled{opacity:.5;cursor:not-allowed}#status{min-height:24px;margin-top:12px;color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.card,.steps,.privacy{border:1px solid var(--line);border-radius:16px;background:#181825cc;padding:20px}
+.card h2{margin:8px 0 4px;font-size:15px}.card p,.privacy p{margin:0;color:var(--muted);font-size:13px}.steps{margin-top:44px;padding:25px}.steps h2,.privacy h2{margin:0 0 14px;font-size:20px}
+ol{margin:0;padding-left:22px;color:var(--muted)}li{padding:5px}li strong{color:var(--text)}.privacy{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:14px;background:#1e1e2e}
+footer{display:flex;justify-content:space-between;gap:16px;margin-top:34px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+@media(max-width:650px){.wrap{padding-top:26px}header{margin-bottom:46px}.grid{grid-template-columns:1fr}.privacy{grid-template-columns:1fr}footer{flex-direction:column}.lead{font-size:16px}}
+</style></head>
+<body><main class="wrap">
+<header><div class="brand"><span class="mark">↧</span><span>Claude MD Exporter</span></div><nav><a href="https://github.com/ERROR404DTIR/claude-md-exporter">GitHub</a><a href="https://github.com/ERROR404DTIR/claude-md-exporter/blob/main/README.md">Docs</a></nav></header>
+<section class="hero"><span class="eyebrow">● Open source · No account required</span><h1>Your Claude chats.<br>Saved as Markdown.</h1>
+<p class="lead">A tiny bookmarklet that exports the conversation you're viewing into a clean <code>.md</code> file. No extension, no separate app, no upload to another service.</p>
+<div class="install"><a id="bookmarklet" class="bookmarklet" href="#" draggable="true">📥 Claude Export</a><p class="hint">Drag this green link to your browser's bookmarks toolbar.</p>
+<div class="actions"><button id="copy" type="button" disabled>Copy bookmarklet</button><a class="secondary" href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Open Claude.ai ↗</a></div>
+<div id="status" role="status" aria-live="polite">Preparing your bookmarklet…</div></div></section>
+<section class="grid"><article class="card"><div>🧾</div><h2>Clean Markdown</h2><p>Preserves source text, code, tables, links, math and message order.</p></article>
+<article class="card"><div>🔒</div><h2>Private by design</h2><p>Your conversation is requested from Claude and processed in your browser.</p></article>
+<article class="card"><div>🧩</div><h2>Useful extras</h2><p>Includes supported artifacts, generated files, widgets and attachment details.</p></article></section>
+<section class="steps"><h2>Install in three steps</h2><ol>
+<li><strong>Show your bookmarks toolbar.</strong> In most desktop browsers, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>.</li>
+<li><strong>Drag the green “Claude Export” link</strong> above onto that toolbar. Or copy it and paste into a new bookmark's URL field.</li>
+<li><strong>Open a Claude conversation</strong> while signed in, then click your new bookmark. The Markdown file will download.</li>
+</ol></section>
+<section class="privacy"><div><h2>🔐 Your chat stays yours</h2><p>The bookmarklet makes a same-origin request to Claude's own conversation endpoint using the session already open in your browser. It does not transmit chat contents to this project or analytics services.</p></div>
+<div><h2>Know what you install</h2><p>Bookmarklets run with the permissions of the page they are opened on. Review the source before installing. This project does not fetch remote code when you click the bookmark.</p></div></section>
+<footer><span>Independent community project · Not affiliated with Anthropic.</span><span><a href="https://github.com/ERROR404DTIR/claude-md-exporter">Source code</a> · MIT License</span></footer>
+</main><script>
+(async()=>{const link=document.getElementById('bookmarklet'),copy=document.getElementById('copy'),status=document.getElementById('status');let payload='';
+try{const r=await fetch('../claude-exporter.js',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const source=await r.text();if(!source.includes('setupClaudeExporter();'))throw Error('Incomplete source');payload='javascript:(function(){\n'+source+'\n})()';link.href=payload;copy.disabled=false;status.textContent='Ready. Drag the green link to your bookmarks toolbar.'}
+catch(e){status.textContent='Could not load the bookmarklet. Refresh or use the source on GitHub.';console.error(e)}
+link.addEventListener('click',e=>{e.preventDefault();if(payload)status.textContent='Drag this link to the bookmarks toolbar; do not click it here.'});
+copy.addEventListener('click',async()=>{if(!payload)return;try{await navigator.clipboard.writeText(payload);status.textContent='Copied. Create a bookmark and paste into its URL field.'}catch{status.textContent='Clipboard blocked. Drag the green link instead.'}});
+})();
+</script></body></html>
