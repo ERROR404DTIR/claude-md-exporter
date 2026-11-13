@@ -1,5 +1,7 @@
 # Claude MD Exporter
 
+<p align="center"><img src="assets/readme-banner.svg" alt="Animated Claude Markdown Exporter banner" width="100%"></p>
+
 A privacy-focused bookmarklet that exports the **currently open Claude.ai conversation** to a Markdown (`.md`) file.
 
 **[Open the installation page](https://error404dtir.github.io/claude-md-exporter/)** · [Source code](https://github.com/ERROR404DTIR/claude-md-exporter/blob/main/claude-exporter.js)
@@ -8,7 +10,7 @@ A privacy-focused bookmarklet that exports the **currently open Claude.ai conver
 
 1. Open the [installation page](https://error404dtir.github.io/claude-md-exporter/).
 2. Show your browser's bookmarks toolbar (usually `Ctrl+Shift+B` on desktop).
-3. Drag the green **📥 Claude Export** link onto the toolbar.
+3. Drag the green ** Claude Export** link onto the toolbar.
 4. Open a conversation at [claude.ai](https://claude.ai/) while signed in.
 5. Click the saved bookmark. Your `.md` file will download.
 
